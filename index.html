@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>halloween party</title>
-  <link rel="stylesheet" href="style.css">
-  </head>
+    <meta charset="UTF-8">
+    <title>halloween party</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  
-    <div class="img-grid">
-    <button class="img-btn" data-w="Where">
-    <img src="images/where.jpg" alt="Where">
-    <span class="label">Where</span>
-    </button>
-  </div>
 
-  
-  <div class="gallery">
-    <img src="images/where.jpeg" alt="My first picture" width="300">
-    <img src="images/alicefly.png" alt="alicefly" width="300">
-    <img src="images/chesh.png" alt="chesh" width="300">
-    <img src="images/plant1.png" alt="1" width="300">
-    <img src="images/plant2.png" alt="2" width="300">
-    <img src="images/plant3.png" alt="3" width="300">
-    <img src="images/plant4.png" alt="4" width="300">
-    <img src="images/plant5.png" alt="5" width="300">
-    <img src="images/plant6.png" alt="6" width="300">
-    <img src="images/plant7.png" alt="7" width="300">
-    <img src="images/plant8.png" alt="8" width="300">
-    <img src="images/plant9.png" alt="9" width="300">
-    <img src="images/plant10.png"  alt="10" width="300">
-    <img src="images/rabbit.png" alt="rabbit" width="300">
-    <img src="images/Screenshot 2025-09-03 194342.png" alt="sc" width="300">
-    <img src="images/White_Rabbit.png" alt="white" width="300">
-    <img src="images/White_Rabbit_OUAT.jpeg" alt="another" width="300">
-    <img src="images/chesh.png" alt="chess" width="300">
-    <img src="images/cat.png" alt="cat" width="300">
-    <img src="images/il_1140xN.1122217471_h4dq.jpg" alt="i" width="300">
-    <img src="images/Cheshire__1_-removebg-preview.png" alt="weirdchesh" width="300">
-  </div>
+    <div class="gallery">
+        <img src="images/where.jpeg" alt="My first picture" width="300">
+        <img src="images/alicefly.png" alt="alicefly" width="300">
+        <img src="images/chesh.png" alt="chesh" width="300">
+        <img src="images/plant1.png" alt="1" width="300">
+        <img src="images/plant2.png" alt="2" width="300">
+        <img src="images/plant3.png" alt="3" width="300">
+        <img src="images/plant4.png" alt="4" width="300">
+        <img src="images/plant5.png" alt="5" width="300">
+        <img src="images/plant6.png" alt="6" width="300">
+        <img src="images/plant7.png" alt="7" width="300">
+        <img src="images/plant8.png" alt="8" width="300">
+        <img src="images/plant9.png" alt="9" width="300">
+        <img src="images/plant10.png" alt="10" width="300">
+        <img src="images/rabbit.png" alt="rabbit" width="300">
+        <img src="images/Screenshot 2025-09-03 194342.png" alt="sc" width="300">
+        <img src="images/White_Rabbit.png" alt="white" width="300">
+        <img src="images/White_Rabbit_OUAT.jpeg" alt="another" width="300">
+        <img src="images/chesh.png" alt="chess" width="300">
+        <img src="images/cat.png" alt="cat" width="300">
+        <img src="images/il_1140xN.1122217471_h4dq.jpg" alt="i" width="300">
+        <img src="images/Cheshire__1_-removebg-preview.png" alt="weirdchesh" width="300">
+    </div>
 
-  <script>
-    // Click handler: show alert and play the “pressed” animation
-    document.querySelectorAll('.img-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-        const which = btn.dataset.w;
-        alert(`${which}: Add your info here!`);
-        btn.classList.add('active');
-        setTimeout(() => btn.classList.remove('active'), 180);
+    <div class="hero">
+        <img src="images/where.jpeg" alt="Background">
+
+        <button class="overlay-btn where" data-w="Where">Where</button>
+    </div>
+
+    <script>
+        // Click handler: show alert and play the “pressed” animation
+        document.querySelectorAll('.img-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const which = btn.dataset.w;
+                alert(`${which}: Add your info here!`);
+                btn.classList.add('active');
+                setTimeout(() => btn.classList.remove('active'), 180);
+            });
         });
-    });
-  </script>
+    </script>
 
 </body>
+
 </html>

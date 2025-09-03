@@ -43,60 +43,46 @@ body {
   background-size: cover; /* makes it fill the whole page */
 }
 
-    /* Grid layout */
-.img-grid {
-  max-width: 900px;
-  margin: 20px auto 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
+ 
 
-/* Image button base */
-.img-btn {
+
+/* Container holds the image and positions children over it */
+.hero {
   position: relative;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 12px;
+  max-width: 900px;      /* adjust as you like */
+  margin: 24px auto;
+  border-radius: 14px;
   overflow: hidden;
-  outline: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.15s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,.2);
 }
-
-/* The image itself */
-.img-btn img {
+.hero img {
   display: block;
   width: 100%;
-  height: 180px;           /* adjust as you like */
-  object-fit: cover;       /* crops to fill nicely */
-  transition: filter 0.15s ease, transform 0.15s ease;
+  height: 60vh;          /* height of the hero area */
+  object-fit: cover;
+  transition: filter .15s ease, transform .15s ease;
 }
 
-/* Text label overlay */
-.img-btn .label {
-  position: absolute;
-  left: 12px;
-  bottom: 12px;
-  padding: 6px 10px;
+/* Buttons that sit ON the image */
+.overlay-btn {
+  position: absolute;    /* key: position inside .hero */
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0,0,0,.55);
+  color: #fff;
   font-weight: 700;
-  color: white;
-  background: rgba(0,0,0,0.45);
-  border-radius: 8px;
-  pointer-events: none;    /* clicks go to the button */
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: transform .15s ease, background .15s ease;
 }
+.overlay-btn:hover { transform: translateY(-1px); }
+.overlay-btn.active { transform: scale(1.06); background: rgba(0,0,0,.7); }
 
-/* Hover: a tiny lift */
-.img-btn:hover {
-  transform: translateY(-2px);
-}
+/* Example positions – tweak to place them where you want */
+.when  { top: 12%; left: 10%; }
+.where { top: 12%; right: 10%; }
+.who   { top: 45%; left: 12%; }
+.why   { bottom: 16%; right: 12%; }
+.what  { bottom: 10%; left: 50%; transform: translateX(-50%); }
 
-/* Click/active effect: grow a bit + dim image */
-.img-btn.active img,
-.img-btn:active img {
-  transform: scale(1.03);
-  filter: brightness(0.8) saturate(0.9);
-}
-    
