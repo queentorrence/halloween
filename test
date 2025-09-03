@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Free Website</title>
+  <meta charset="UTF-8">
+  <title>The Five Ws</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      margin: 50px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    button {
+      display: block;
+      width: 200px;
+      margin: 15px auto;
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my free Cloudflare Pages site.</p>
+  <h1>The Five Ws</h1>
+
+  <button onclick="alert('When: Add your info here!')">When</button>
+  <button onclick="alert('Where: Add your info here!')">Where</button>
+  <button onclick="alert('Who: Add your info here!')">Who</button>
+  <button onclick="alert('Why: Add your info here!')">Why</button>
+  <button onclick="alert('What: Add your info here!')">What</button>
 </body>
 </html>
