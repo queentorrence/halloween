@@ -16,6 +16,21 @@ h1 {
     margin-bottom: 30px;
 }
 
+h1.title {
+    font-family: 'AliceWonderland', sans-serif;
+    font-size: 72px;
+    /* make it big */
+    text-align: center;
+    /* center horizontally */
+    margin: 20vh auto 40px;
+    /* push down into middle of screen */
+    color: #ff6600;
+    /* Halloween orange */
+    text-shadow: 2px 2px 8px black;
+    /* spooky glow/shadow */
+}
+
+
 button {
     display: block;
     width: 200px;
