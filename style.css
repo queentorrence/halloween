@@ -5,26 +5,37 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'AliceWonderland', sans-serif;
-    background: #f5f5f5;
-    text-align: center;
-    margin: 50px;
+html, body {
+    height: 100%;
+    /* make sure body fills the viewport */
+    margin: 0;
+    /* remove default margins */
 }
+
+body {
+    display: flex;
+    align-items: center;
+    /* vertical centering */
+    justify-content: center;
+    /* horizontal centering */
+    background: #f5f5f5;
+    /* or your background */
+    font-family: 'AliceWonderland', sans-serif;
+    background: url("images/asfdwse.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    /* makes it fill the whole page */
+}
+
 
 h1.title {
     font-family: 'AliceWonderland', sans-serif;
     font-size: 72px;
-    /* make it big */
-    text-align: center;
-    /* center horizontally */
-    margin: 20vh auto 40px;
-    /* push down into middle of screen */
-    color: #080604;
-    /* Halloween orange */
-    text-shadow: 2px 2px 8px rgb(61, 59, 59);
-    /* spooky glow/shadow */
+    color: #000000;
+    text-shadow: 2px 2px 8px rgb(186, 127, 224);
+    margin: 0;
+    /* no extra spacing */
 }
+
 
 button {
     display: block;
@@ -44,17 +55,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'AliceWonderland', sans-serif;
-    background: url("images/asfdwse.jpeg") no-repeat center center fixed;
-    background-size: cover;
-    /* makes it fill the whole page */
-}
-
-
 
 .img-buttons {
     display: flex;
