@@ -1,88 +1,72 @@
 @font-face {
-  font-family: 'AliceWonderland';
-  src: url('fonts/Alice_in_Wonderland_3.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'AliceWonderland';
+    src: url('fonts/Alice_in_Wonderland_3.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-  font-family: 'AliceWonderland', sans-serif;
-  background: #f5f5f5;
-  text-align: center;
-  margin: 50px;
+    font-family: 'AliceWonderland', sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    margin: 50px;
 }
 
 h1 {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 button {
-  display: block;
-  width: 200px;
-  margin: 15px auto;
-  padding: 15px;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-family: 'AliceWonderland', sans-serif;
+    display: block;
+    width: 200px;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'AliceWonderland', sans-serif;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'AliceWonderland', sans-serif;
-  background: url("images/asfdwse.jpeg") no-repeat center center fixed;
-  background-size: cover; /* makes it fill the whole page */
+    margin: 0;
+    padding: 0;
+    font-family: 'AliceWonderland', sans-serif;
+    background: url("images/asfdwse.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    /* makes it fill the whole page */
 }
 
- 
 
 
-/* Container holds the image and positions children over it */
-.hero {
-  position: relative;
-  max-width: 900px;      /* adjust as you like */
-  margin: 24px auto;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,.2);
-}
-.hero img {
-  display: block;
-  width: 100%;
-  height: 60vh;          /* height of the hero area */
-  object-fit: cover;
-  transition: filter .15s ease, transform .15s ease;
+.img-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
 }
 
-/* Buttons that sit ON the image */
-.overlay-btn {
-  position: absolute;    /* key: position inside .hero */
-  padding: 8px 14px;
-  border: none;
-  border-radius: 10px;
-  background: rgba(0,0,0,.55);
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
-  backdrop-filter: blur(2px);
-  transition: transform .15s ease, background .15s ease;
+.img-btn {
+    width: 180px;
+    /* set size */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
 }
-.overlay-btn:hover { transform: translateY(-1px); }
-.overlay-btn.active { transform: scale(1.06); background: rgba(0,0,0,.7); }
 
-/* Example positions – tweak to place them where you want */
-.when  { top: 12%; left: 10%; }
-.where { top: 12%; right: 10%; }
-.who   { top: 45%; left: 12%; }
-.why   { bottom: 16%; right: 12%; }
-.what  { bottom: 10%; left: 50%; transform: translateX(-50%); }
+.img-btn:hover {
+    transform: scale(1.05);
+}
 
+.img-btn.active {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}

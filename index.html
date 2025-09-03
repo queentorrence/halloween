@@ -10,7 +10,6 @@
 <body>
 
     <div class="gallery">
-        <img src="images/where.png" alt="My first picture" width="300">
         <img src="images/alicefly.png" alt="alicefly" width="300">
         <img src="images/chesh.png" alt="chesh" width="300">
         <img src="images/plant1.png" alt="1" width="300">
@@ -33,23 +32,22 @@
         <img src="images/Cheshire__1_-removebg-preview.png" alt="weirdchesh" width="300">
     </div>
 
-    <div class="hero">
-        <img src="images/where.png" alt="Background">
+  
 
-        <button class="overlay-btn where" data-w="Where">Where</button>
+    <div class="img-buttons">
+        <img src="images/where.png" alt="Where" class="img-btn" data-w="Where">
     </div>
 
     <script>
-        // Click handler: show alert and play the “pressed” animation
-        document.querySelectorAll('.img-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const which = btn.dataset.w;
-                alert(`${which}: Add your info here!`);
-                btn.classList.add('active');
-                setTimeout(() => btn.classList.remove('active'), 180);
+        document.querySelectorAll('.img-btn').forEach(img => {
+            img.addEventListener('click', () => {
+                alert(`${img.dataset.w}: Add your info here!`);
+                img.classList.add('active');
+                setTimeout(() => img.classList.remove('active'), 180);
             });
         });
     </script>
+
 
 </body>
 
