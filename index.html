@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <title>halloween party</title>
   <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 <body>
   
-  <button onclick="alert('When: Add your info here!')">When</button>
-  <button onclick="alert('Where: Add your info here!')">Where</button>
-  <button onclick="alert('Who: Add your info here!')">Who</button>
-  <button onclick="alert('Why: Add your info here!')">Why</button>
-  <button onclick="alert('What: Add your info here!')">What</button>
+    <div class="img-grid">
+    <button class="img-btn" data-w="Where">
+    <img src="images/where.jpg" alt="Where">
+    <span class="label">Where</span>
+    </button>
+  </div>
 
   
   <div class="gallery">
-    <img src="images/Cheshire_head.jpeg" alt="My first picture" width="300">
+    <img src="images/where.jpeg" alt="My first picture" width="300">
     <img src="images/alicefly.png" alt="alicefly" width="300">
     <img src="images/chesh.png" alt="chesh" width="300">
     <img src="images/plant1.png" alt="1" width="300">
@@ -37,6 +38,18 @@
     <img src="images/il_1140xN.1122217471_h4dq.jpg" alt="i" width="300">
     <img src="images/Cheshire__1_-removebg-preview.png" alt="weirdchesh" width="300">
   </div>
+
+  <script>
+    // Click handler: show alert and play the “pressed” animation
+    document.querySelectorAll('.img-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+        const which = btn.dataset.w;
+        alert(`${which}: Add your info here!`);
+        btn.classList.add('active');
+        setTimeout(() => btn.classList.remove('active'), 180);
+        });
+    });
+  </script>
 
 </body>
 </html>

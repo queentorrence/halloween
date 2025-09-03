@@ -1,41 +1,102 @@
-    @font-face {
-    font-family: 'AliceWonderland';
-    src: url('fonts/Alice_in_Wonderland_3.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    }
+@font-face {
+  font-family: 'AliceWonderland';
+  src: url('fonts/Alice_in_Wonderland_3.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    body {
-      font-family: 'AliceWonderland', sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-      margin: 50px;
-    }
-    h1 {
-      margin-bottom: 30px;
-    }
-    button {
-      display: block;
-      width: 200px;
-      margin: 15px auto;
-      padding: 15px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      background-color: #007bff;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      font-family: 'AliceWonderland', sans-serif;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    body {
-    margin: 0;
-    padding: 0;
-    font-family: 'AliceWonderland', sans-serif;
-    background: url("images/asfdwse.jpeg") no-repeat center center fixed;
-    background-size: cover; /* makes it fill the whole page */
-    }
+body {
+  font-family: 'AliceWonderland', sans-serif;
+  background: #f5f5f5;
+  text-align: center;
+  margin: 50px;
+}
 
+h1 {
+  margin-bottom: 30px;
+}
+
+button {
+  display: block;
+  width: 200px;
+  margin: 15px auto;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'AliceWonderland', sans-serif;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'AliceWonderland', sans-serif;
+  background: url("images/asfdwse.jpeg") no-repeat center center fixed;
+  background-size: cover; /* makes it fill the whole page */
+}
+
+    /* Grid layout */
+.img-grid {
+  max-width: 900px;
+  margin: 20px auto 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* Image button base */
+.img-btn {
+  position: relative;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.15s ease;
+}
+
+/* The image itself */
+.img-btn img {
+  display: block;
+  width: 100%;
+  height: 180px;           /* adjust as you like */
+  object-fit: cover;       /* crops to fill nicely */
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+/* Text label overlay */
+.img-btn .label {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 6px 10px;
+  font-weight: 700;
+  color: white;
+  background: rgba(0,0,0,0.45);
+  border-radius: 8px;
+  pointer-events: none;    /* clicks go to the button */
+}
+
+/* Hover: a tiny lift */
+.img-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Click/active effect: grow a bit + dim image */
+.img-btn.active img,
+.img-btn:active img {
+  transform: scale(1.03);
+  filter: brightness(0.8) saturate(0.9);
+}
+    
