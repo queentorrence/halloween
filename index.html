@@ -55,6 +55,20 @@
     </script>
 
 
+    <!-- Cursor Effects library (global "cursoreffects") -->
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+
+    <!-- Initialize ONLY the bubble cursor -->
+    <script>
+        // Respect reduced motion
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            new cursoreffects.bubbleCursor({
+                // optional colors (defaults look fine too)
+                fillColor: "#f771b4",
+                strokeColor: "#e6f1f7"
+            });
+        }
+    </script>
 
 
 </body>
