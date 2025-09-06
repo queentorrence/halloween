@@ -84,3 +84,14 @@ button:hover {
     transform: scale(1.1);
     filter: brightness(0.7);
 }
+
+.img-btn.where {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.img-btn.when {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
