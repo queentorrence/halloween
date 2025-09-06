@@ -71,13 +71,23 @@ svg {
 }
 
 .gallery-img.plant5 {
-    bottom: 5%;
-    right: 20%;
+    bottom: 25%;
+    right: 77%;
 }
 
+/* exceptions: make plant7 and plant8 larger */
 .gallery-img.plant7 {
-    bottom: 10%;
-    left: 45%;
+    bottom: 75%;
+    left: 20%;
+    width: 800px;
+    height: auto;
+}
+
+.gallery-img.plant8 {
+    bottom: 80%;
+    left: 52%;
+    width: 800px;
+    height: auto;
 }
 
 .gallery-img.white-rabbit {
@@ -142,7 +152,7 @@ svg {
 .img-btn.who {
     position: absolute;
     top: 67%;
-    left: 10%;
+    left: 25%;
 }
 
 .img-btn.why {
