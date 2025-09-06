@@ -20,30 +20,21 @@ body {
 
 
 svg {
-    position: absolute;
-    /* lets you place it anywhere */
-    top: 20%;
-    /* distance from top of page */
-    left: 50%;
-    /* center horizontally */
     transform: translateX(-50%);
-    /* actually centers it */
-    width: 800px;
-    /* controls how big it renders */
+    width: 750px;
     height: auto;
-    /* keeps proportions */
 }
 
-/* top arc */
 .curved-title.top {
-    top: 20%;
-    /* adjust vertical position */
+    position: absolute;
+    top: 22%;
+    left: 35%;
 }
 
-/* bottom arc */
 .curved-title.bottom {
-    top: 32%;
-    /* adjust so it sits below the top arc */
+    position: absolute;
+    top: 40%;
+    left: 74%;
 }
 
 
@@ -86,8 +77,8 @@ svg {
 }
 
 .gallery-img.plant5 {
-    bottom: 20%;
-    right: 77%;
+    bottom: 2%;
+    right: 85%;
 }
 
 /* exceptions: make plant7 and plant8 larger */
@@ -124,11 +115,12 @@ svg {
 .gallery-img.cat {
     top: 1%;
     left: 85%;
+    opacity: 0.8;
 }
 
 .gallery-img.chess {
-    top: 6%;
-    left: 50%;
+    top: 40%;
+    left: 5%;
 }
 
 
