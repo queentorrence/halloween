@@ -77,8 +77,10 @@ svg {
 }
 
 .gallery-img.plant5 {
-    bottom: 2%;
-    right: 85%;
+    bottom: 20%;
+    right: 82%;
+    width: 500px;
+    height: auto;
 }
 
 /* exceptions: make plant7 and plant8 larger */
@@ -108,8 +110,8 @@ svg {
 }
 
 .gallery-img.plant10 {
-    bottom: 5%;
-    right: 70%;
+    bottom: 1%;
+    right: 75%;
 }
 
 .gallery-img.cat {
@@ -151,20 +153,22 @@ svg {
 .img-btn.where {
     position: absolute;
     top: 5%;
-    left: 5%;
+    left: 10%;
 }
 
 .img-btn.when {
     position: absolute;
-    top: 22%;
-    left: 55%;
+    top: 41%;
+    left: 43%;
     opacity: 0.8;
 }
 
 .img-btn.who {
     position: absolute;
-    top: 67%;
-    left: 25%;
+    top: 62%;
+    right: 77%;
+    width: 700px;
+    height: auto;
 }
 
 .img-btn.why {
