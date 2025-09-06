@@ -8,22 +8,13 @@
 html,
 body {
     height: 100%;
-    /* make sure body fills the viewport */
     margin: 0;
-    /* remove default margins */
-}
-
-body {
-    display: flex;
-    align-items: center;
-    /* vertical centering */
-    justify-content: center;
-    /* horizontal centering */
     font-family: 'AliceWonderland', sans-serif;
     background: url("images/asfdwse.jpeg") no-repeat center center fixed;
     background-size: cover;
-    /* makes it fill the whole page */
     cursor: url("images/cursor.png"), auto;
+    overflow-x: hidden;
+    /* prevent horizontal scroll */
 }
 
 
@@ -70,8 +61,8 @@ svg {
 }
 
 .gallery-img.plant1 {
-    bottom: 5%;
-    left: 40%;
+    bottom: 1%;
+    left: 10%;
 }
 
 .gallery-img.plant2 {
@@ -90,8 +81,8 @@ svg {
 }
 
 .gallery-img.white-rabbit {
-    top: 35%;
-    right: 10%;
+    top: 40%;
+    right: 50%;
 }
 
 .gallery-img.cheshire {
@@ -106,8 +97,8 @@ svg {
 }
 
 .gallery-img.cat {
-    bottom: 15%;
-    left: 60%;
+    top: 1%;
+    left: 85%;
 }
 
 
