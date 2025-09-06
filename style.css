@@ -30,18 +30,51 @@ body {
 h1.title {
     font-family: 'AliceWonderland', sans-serif;
     font-size: 72px;
-    color: #000000;
-    text-shadow: 2px 2px 8px rgb(186, 127, 224);
+    color: #33195e;
+    text-shadow: 2px 2px 8px rgb(88, 97, 40);
     margin: 0;
     /* no extra spacing */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;   /* centers multi-line text */
-    line-height: 1.2;     /* adjust spacing between lines */
+    text-align: center;
+    /* centers multi-line text */
+    line-height: 1.2;
+    /* adjust spacing between lines */
 
 }
+
+/* common style for both curved text svgs */
+.curved-title {
+    font-family: 'AliceWonderland', sans-serif;
+    font-size: 72px;
+    color: #000000;
+    text-shadow: 2px 2px 8px rgb(88, 97, 40);
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* horizontal center */
+    width: min(90vw, 900px);
+    /* responsive scaling */
+    pointer-events: none;
+    /* let clicks pass through */
+}
+
+/* top arc */
+.curved-title.top {
+    top: 20%;
+    /* adjust vertical position */
+}
+
+/* bottom arc */
+.curved-title.bottom {
+    top: 32%;
+    /* adjust so it sits below the top arc */
+}
+
+
 
 .img-buttons {
     display: relative;
@@ -66,8 +99,32 @@ h1.title {
 }
 
 /* Individual placement */
-.img-btn.where { position: absolute; top: 5%; left: 5%; }
-.img-btn.when  { position: absolute; top: 22%; left: 55%; }
-.img-btn.who   { position: absolute; top: 50%; left: 10%; }
-.img-btn.why   { position: absolute; top: 40%; left: 70%; }
-.img-btn.what  { position: absolute; top: 40%; left: 80%; }
+.img-btn.where {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.img-btn.when {
+    position: absolute;
+    top: 22%;
+    left: 55%;
+}
+
+.img-btn.who {
+    position: absolute;
+    top: 69%;
+    left: 10%;
+}
+
+.img-btn.why {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+
+.img-btn.what {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+}
