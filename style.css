@@ -70,9 +70,19 @@ svg {
     left: 1%;
 }
 
+/* exceptions: make plant3 and plant4 larger */
 .gallery-img.plant3 {
-    bottom: 38%;
-    left: 73%;
+    bottom: 30%;
+    left: 70%;
+    width: 500px;
+    height: auto;
+}
+
+.gallery-img.plant4 {
+    bottom: 15%;
+    left: 65%;
+    width: 1100px;
+    height: auto;
 }
 
 .gallery-img.plant5 {
