@@ -27,39 +27,21 @@ body {
 }
 
 
-h1.title {
-    font-family: 'AliceWonderland', sans-serif;
-    font-size: 72px;
-    color: #33195e;
-    text-shadow: 2px 2px 8px rgb(88, 97, 40);
-    margin: 0;
-    /* no extra spacing */
+svg {
     position: absolute;
-    top: 50%;
+    /* lets you place it anywhere */
+    top: 20%;
+    /* distance from top of page */
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    /* centers multi-line text */
-    line-height: 1.2;
-    /* adjust spacing between lines */
-
-}
-
-/* common style for both curved text svgs */
-.curved-title {
-    font-family: 'AliceWonderland', sans-serif;
-    color: #000000;
-    text-shadow: 2px 2px 8px rgb(88, 97, 40);
-
-    position: absolute;
-    left: 50%;
+    /* center horizontally */
     transform: translateX(-50%);
-    /* horizontal center */
-    width: min(90vw, 900px);
-    /* responsive scaling */
-    pointer-events: none;
-    /* let clicks pass through */
+    /* actually centers it */
+    width: 800px;
+    /* controls how big it renders */
+    height: auto;
+    /* keeps proportions */
 }
+
 
 /* top arc */
 .curved-title.top {
@@ -108,6 +90,7 @@ h1.title {
     position: absolute;
     top: 22%;
     left: 55%;
+    opacity: 0.8;
 }
 
 .img-btn.who {
