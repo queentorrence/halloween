@@ -70,8 +70,13 @@ svg {
     left: 1%;
 }
 
+.gallery-img.plant3 {
+    bottom: 38%;
+    left: 73%;
+}
+
 .gallery-img.plant5 {
-    bottom: 25%;
+    bottom: 20%;
     right: 77%;
 }
 
@@ -90,9 +95,9 @@ svg {
     height: auto;
 }
 
-.gallery-img.white-rabbit {
-    top: 40%;
-    right: 50%;
+.gallery-img.rabbit {
+    top: 65%;
+    right: 0%;
 }
 
 .gallery-img.cheshire {
@@ -103,12 +108,17 @@ svg {
 
 .gallery-img.plant10 {
     bottom: 5%;
-    right: 5%;
+    right: 70%;
 }
 
 .gallery-img.cat {
     top: 1%;
     left: 85%;
+}
+
+.gallery-img.chess {
+    top: 6%;
+    left: 50%;
 }
 
 
@@ -157,12 +167,12 @@ svg {
 
 .img-btn.why {
     position: absolute;
-    top: 40%;
-    left: 70%;
+    bottom: 68%;
+    left: 68%;
 }
 
 .img-btn.what {
     position: absolute;
-    top: 40%;
-    left: 80%;
+    top: 55%;
+    left: 70%;
 }
