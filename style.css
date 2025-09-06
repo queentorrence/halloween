@@ -48,7 +48,6 @@ h1.title {
 /* common style for both curved text svgs */
 .curved-title {
     font-family: 'AliceWonderland', sans-serif;
-    font-size: 72px;
     color: #000000;
     text-shadow: 2px 2px 8px rgb(88, 97, 40);
 
@@ -85,7 +84,7 @@ h1.title {
 .img-btn {
     width: auto;
     height: auto;
-    cursor: pointer;
+    cursor: url("images/cursor.png"), auto;
     transition: transform 0.15s ease, filter 0.15s ease;
 }
 
