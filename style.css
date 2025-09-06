@@ -27,6 +27,7 @@ body {
 }
 
 
+
 svg {
     position: absolute;
     /* lets you place it anywhere */
@@ -42,7 +43,6 @@ svg {
     /* keeps proportions */
 }
 
-
 /* top arc */
 .curved-title.top {
     top: 20%;
@@ -53,6 +53,61 @@ svg {
 .curved-title.bottom {
     top: 32%;
     /* adjust so it sits below the top arc */
+}
+
+
+
+.gallery-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+/* individual placements */
+.gallery-img.alicefly {
+    top: 10%;
+    left: 20%;
+}
+
+.gallery-img.plant1 {
+    bottom: 5%;
+    left: 40%;
+}
+
+.gallery-img.plant2 {
+    bottom: 0.5%;
+    left: 1%;
+}
+
+.gallery-img.plant5 {
+    bottom: 5%;
+    right: 20%;
+}
+
+.gallery-img.plant7 {
+    bottom: 10%;
+    left: 45%;
+}
+
+.gallery-img.white-rabbit {
+    top: 35%;
+    right: 10%;
+}
+
+.gallery-img.cheshire {
+    top: 40%;
+    left: 22%;
+    opacity: 0.5;
+}
+
+.gallery-img.plant10 {
+    bottom: 5%;
+    right: 5%;
+}
+
+.gallery-img.cat {
+    bottom: 15%;
+    left: 60%;
 }
 
 
@@ -79,7 +134,7 @@ svg {
     filter: brightness(0.7);
 }
 
-/* Individual placement */
+/* Individual placements */
 .img-btn.where {
     position: absolute;
     top: 5%;
@@ -95,7 +150,7 @@ svg {
 
 .img-btn.who {
     position: absolute;
-    top: 69%;
+    top: 67%;
     left: 10%;
 }
 
