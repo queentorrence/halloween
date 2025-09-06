@@ -7,7 +7,7 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     font-family: 'AliceWonderland', sans-serif;
     background: url("images/asfdwse.jpeg") no-repeat center center fixed;
@@ -179,6 +179,9 @@ svg {
 
 .img-btn.what {
     position: absolute;
-    top: 55%;
-    left: 70%;
+    top: 60%;
+    left: 65%;
+    filter: brightness(0.7);
+    width: 350px;
+    height: auto;
 }
