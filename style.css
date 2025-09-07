@@ -26,14 +26,14 @@ body {
 
 .gallery-img.group1 {
     top: 25%;
-    left: 4%;
+    left: 2%;
     width: 1200px;
     height: auto;
 }
 
 .gallery-img.group2 {
     top: 39%;
-    left: 47%;
+    left: 46%;
     width: 800px;
     height: auto;
 }
@@ -69,10 +69,11 @@ body {
 }
 
 .gallery-img.plant5 {
-    top: 44%;
-    right: 79%;
-    width: 500px;
+    top: 60%;
+    right: 13%;
+    width: 550px;
     height: auto;
+    opacity: 0.9;
 }
 
 .gallery-img.plant7 {
@@ -99,7 +100,7 @@ body {
 .gallery-img.cheshire {
     top: 46%;
     left: 24%;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .gallery-img.plant10 {
@@ -111,16 +112,6 @@ body {
     top: 1%;
     left: 85%;
     opacity: 0.8;
-}
-
-.gallery-img.chess {
-    top: 40%;
-    left: 5%;
-}
-
-.gallery-img.club {
-    top: 40%;
-    left: 50%;
 }
 
 
@@ -150,7 +141,7 @@ body {
 .img-btn.where {
     position: absolute;
     bottom: 69%;
-    right: 85%;
+    right: 60%;
     width: 400px;
     height: auto;
 }
@@ -158,30 +149,30 @@ body {
 .img-btn.when {
     position: absolute;
     top: 46%;
-    right: 72%;
+    right: 78%;
 }
 
 .img-btn.who {
     position: absolute;
     top: 50%;
-    left: 44%;
-    width: 700px;
+    left: 45%;
+    width: 670px;
     height: auto;
 }
 
 .img-btn.why {
     position: absolute;
-    bottom: 50%;
-    left: 70%;
+    bottom: 40%;
+    left: 75%;
     width: 700px;
     height: auto;
 }
 
 .img-btn.what {
     position: absolute;
-    top: 65%;
-    left: 68%;
+    top: 68%;
+    left: 80%;
     filter: brightness(0.7);
-    width: 350px;
+    width: 500px;
     height: auto;
 }
