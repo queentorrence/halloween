@@ -24,17 +24,24 @@ body {
     height: auto;
 }
 
-.gallery-img.group1 {
+.gallery-img.avery {
     top: 25%;
     left: 2%;
-    width: 1200px;
+    width: 500px;
     height: auto;
 }
 
-.gallery-img.group2 {
+.gallery-img.unbirthday {
     top: 39%;
     left: 46%;
-    width: 800px;
+    width: 500px;
+    height: auto;
+}
+
+.gallery-img.halloween {
+    top: 39%;
+    left: 46%;
+    width: 500px;
     height: auto;
 }
 
@@ -170,8 +177,8 @@ body {
 
 .img-btn.what {
     position: absolute;
-    top: 68%;
-    left: 80%;
+    top: 4%;
+    left: 54%;
     filter: brightness(0.7);
     width: 500px;
     height: auto;
