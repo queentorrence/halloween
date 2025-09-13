@@ -9,13 +9,13 @@
 
 <body>
 
-        <!-- the images -->
-        <div class="gallery">
-            <!-- img src="images/alicefly.png" alt="alicefly" class="gallery-img alicefly" -->
-            <img src="images/avery.png" alt="a" class="gallery-img avery">
-            <img src="images/unbirthday.png" alt="v" class="gallery-img unbirthday">
-            <img src="images/halloween.png" alt="h" class="gallery-img halloween">
-        </div>
+    <!-- the images -->
+    <div class="gallery">
+        <!-- img src="images/alicefly.png" alt="alicefly" class="gallery-img alicefly" -->
+        <img src="images/avery.png" alt="a" class="gallery-img avery">
+        <img src="images/unbirthday.png" alt="v" class="gallery-img unbirthday">
+        <img src="images/halloween.png" alt="h" class="gallery-img halloween">
+    </div>
 
     </div>
 
@@ -32,14 +32,14 @@
     <script>
         document.querySelectorAll('.img-btn').forEach(img => {
             img.addEventListener('click', () => {
-                alert(`${img.dataset.w}: Add your info here!`);
                 img.classList.add('active');
                 setTimeout(() => img.classList.remove('active'), 180);
             });
         });
     </script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
 
 
     <!-- Cursor Effects library (global "cursoreffects") -->
@@ -56,6 +56,8 @@
             });
         }
     </script>
+
+
 
 </body>
 
