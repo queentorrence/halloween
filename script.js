@@ -2,12 +2,10 @@
   document.querySelector('.img-btn.where').addEventListener('click', () => {
     Swal.fire({
       title: 'Where',
-      text: 'G5 - live music bar <br> heiligenstädterstraße 31, bogen 217, 1190 wien',
+      text: 'G5 - live music bar heiligenstädterstraße 31, bogen 217, 1190 wien',
       width: '700px',
-      confirmButtonText: 'Got it!' ,
-      customClass: {
-      popup: 'swal-where'
-    }
+      showConfirmButton: false,
+      customClass: { popup: 'swal-where' }
     });
   });
 
@@ -15,9 +13,10 @@
   document.querySelector('.img-btn.when').addEventListener('click', () => {
     Swal.fire({
       title: 'When',
-      text: 'Add your info here!',
+      text: 'october 31st, 7 pm',
       width: '700px',
-      confirmButtonText: 'Okay!'
+      showConfirmButton: false,
+      customClass: { popup: 'swal-when' }
     });
   });
 
@@ -27,7 +26,8 @@
       title: 'Who',
       text: 'Add your info here!',
       width: '700px',
-      confirmButtonText: 'Nice!'
+      showConfirmButton: false,
+      customClass: { popup: 'swal-who' }
     });
   });
 
@@ -37,7 +37,8 @@
       title: 'Why',
       text: 'Add your info here!',
       width: '700px',
-      confirmButtonText: 'I see!'
+      showConfirmButton: false,
+      customClass: { popup: 'swal-why' }
     });
   });
 
@@ -47,7 +48,8 @@
       title: 'What',
       text: 'Add your info here!',
       width: '700px',
-      confirmButtonText: 'Cool!'
+      showConfirmButton: false,
+      customClass: { popup: 'swal-what' }
     });
   });
 
