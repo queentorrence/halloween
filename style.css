@@ -49,14 +49,31 @@ body {
 }
 
 .img-btn:hover { transform: scale(1.05); }
-.img-btn.who:hover { transform: scale(0.5); }
 .img-btn.active { transform: scale(1.1); filter: brightness(0.7); }
 
 .img-btn.where { top: 5%; left: 2%; width: 18%; height: auto; }
 .img-btn.when { bottom: 3%; right: 2%; width: 16%; height: auto; }
-.img-btn.who { bottom: 1%; left: 1%; width: 30%; height: auto; }
 .img-btn.why { top: 2%; left: 80%; width: 22%; }
 .img-btn.what { top: 4%; left: 50%; width: 20%; filter: brightness(0.7); }
+
+/* WHO button specific */
+.img-btn.who {
+  bottom: 1%;
+  left: 1%;
+  width: 30%;
+  height: auto;
+  transition: transform 0.15s ease, filter 0.15s ease, opacity 0.5s ease;
+  content: url("images/who.png");   /* default image */
+}
+
+/* On hover → swap to alicefly.png */
+.img-btn.who:hover {
+  content: url("images/alicefly.png");
+  transform: scale(1.0); /* keeps your global hover scale */
+}
+
+
+
 
 /* SweetAlert2 */
 .swal2-popup {
@@ -96,6 +113,9 @@ body {
   background: #fff url("images/what_button.png") no-repeat center center;
   background-size: cover;
 }
+
+
+
 
 
 /* 🔹 Media Queries */
