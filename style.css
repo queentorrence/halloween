@@ -16,23 +16,34 @@ body {
     overflow-x: hidden;
 }
 
-.stage {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
 .gallery-img {
     position: absolute;
-    width: 20%;
-    height: auto;
 }
 
 /* Example placements */
-.gallery-img.avery { top: 10%; left: 22%; width: 25%; }
-.gallery-img.unbirthday { top: 30%; left: 32%; width: 40%; }
-.gallery-img.halloween { top: 60%; left: 35%; width: 45%; }
-.gallery-img.alicefly { top: 10%; left: 20%; width: 18%; }
+.gallery-img.avery {
+    top: 10%;
+    left: 22%;
+    width: 25%;
+}
+
+.gallery-img.unbirthday {
+    top: 30%;
+    left: 32%;
+    width: 40%;
+}
+
+.gallery-img.halloween {
+    top: 60%;
+    left: 35%;
+    width: 45%;
+}
+
+.gallery-img.alicefly {
+    top: 10%;
+    left: 20%;
+    width: 18%;
+}
 
 .img-buttons {
     position: relative;
@@ -42,34 +53,60 @@ body {
 
 .img-btn {
     position: absolute;
-    width: 20%;
-    height: auto;
     cursor: url("images/cursor.png"), auto;
     transition: transform 0.15s ease, filter 0.15s ease;
 }
 
-.img-btn:hover { transform: scale(1.05); }
-.img-btn.active { transform: scale(1.1); filter: brightness(0.7); }
+.img-btn:hover {
+    transform: scale(1.05);
+}
 
-.img-btn.where { top: 5%; left: 2%; width: 18%; height: auto; }
-.img-btn.when { bottom: 3%; right: 2%; width: 16%; height: auto; }
-.img-btn.why { top: 2%; left: 80%; width: 22%; }
-.img-btn.what { top: 4%; left: 50%; width: 20%; filter: brightness(0.7); }
+.img-btn.active {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.img-btn.where {
+    top: 5%;
+    left: 2%;
+    width: 18%;
+    height: auto;
+}
+
+.img-btn.when {
+    bottom: 3%;
+    right: 2%;
+    width: 16%;
+    height: auto;
+}
+
+.img-btn.why {
+    top: 2%;
+    left: 80%;
+    width: 22%;
+}
+
+.img-btn.what {
+    top: 4%;
+    left: 50%;
+    width: 20%;
+    filter: brightness(0.7);
+}
 
 /* WHO button specific */
 .img-btn.who {
-  bottom: 1%;
-  left: 1%;
-  width: 30%;
-  height: auto;
-  transition: transform 0.15s ease, filter 0.15s ease, opacity 0.5s ease;
-  content: url("images/who.png");   /* default image */
+    bottom: 1%;
+    left: 1%;
+    width: 30%;
+    height: auto;
+    transition: transform 0.15s ease, filter 0.15s ease, opacity 0.5s ease;
 }
 
 /* On hover → swap to alicefly.png */
 .img-btn.who:hover {
-  content: url("images/alicefly.png");
-  transform: scale(1.0); /* keeps your global hover scale */
+    content: url("images/alicefly.png");
+    transform: scale(1.0);
+    /* keeps your global hover scale */
 }
 
 
@@ -83,69 +120,63 @@ body {
     width: 80vw !important;
     max-width: 1000px;
     height: 80vh;
-    font-size: 5rem ;
-    
-    word-break: keep-all;     /* don’t allow breaking inside words */
-    overflow-wrap: normal;    /* don’t allow emergency breaks */
-    white-space: normal;      /* still allow wrapping at spaces */
+    font-size: 5rem;
+    color: #1e0335;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    white-space: normal;
 }
 
-.swal2-html-container { padding: 40px;}
+.swal2-html-container {
+    padding: 40px;
+}
 
 /* Custom backgrounds per button */
 .swal-where {
-  background: #fff url("images/where_button.png") no-repeat center center;
-  background-size: cover;
+    background: #fff url("images/where_button.png") no-repeat center center;
+    background-size: cover;
 }
 
 .swal-when {
-  background: #fff url("images/when_button.png") no-repeat center center;
-  background-size: cover;
+    background: #fff url("images/when_button.png") no-repeat center center;
+    background-size: cover;
 }
 
 .swal-who {
-  background: #fff url("images/who_button.png") no-repeat center center;
-  background-size: cover;
+    background: #fff url("images/who_button.png") no-repeat center center;
+    background-size: cover;
 }
 
 .swal-why {
-  background: #fff url("images/why_button.png") no-repeat center center;
-  background-size: cover;
+    background: #fff url("images/why_button.png") no-repeat center center;
+    background-size: cover;
 }
 
 .swal-what {
-  background: #fff url("images/what_button.png") no-repeat center center;
-  background-size: cover;
+    background: #fff url("images/what_button.png") no-repeat center center;
+    background-size: cover;
 }
 
 
 
-
-
-/* 🔹 Media Queries */
-
-/* Tablets (≤ 1024px) */
+/* tablets and phones (≤ 1024px) */
 @media (max-width: 1024px) {
-    .gallery-img { width: 28%; }
-    .img-btn { width: 25%; }
-    .img-btn.who { width: 40%; }
-    .img-btn.why { width: 35%; }
-}
+    .gallery-img.avery {
+        width: 50%;
+        left: 10%;
+    }
 
-/* Small tablets / large phones (≤ 768px) */
-@media (max-width: 768px) {
-    .gallery-img { width: 35%; }
-    .img-btn { width: 30%; }
-    .img-btn.who { width: 45%; }
-    .img-btn.why { width: 40%; }
-    .img-btn.what { width: 35%; }
-}
+    .gallery-img.unbirthday {
+        width: 70%;
+        left: 25%;
+    }
 
-/* Phones (≤ 480px) */
-@media (max-width: 480px) {
-    .gallery-img { width: 45%; }
-    .img-btn { width: 40%; }
-    .img-btn.who { width: 50%; }
-    .img-btn.why { width: 50%; }
-    .img-btn.what { width: 40%; }
+    .gallery-img.halloween {
+        width: 75%;
+        left: 15%;
+    }
+
+    .img-btn {
+        width: 25%;
+    }
 }
