@@ -79,11 +79,15 @@ body {
 .swal2-popup {
     border-radius: 20px;
     padding: 40px;
-    font-family: 'AliceWonderland', cursive;
+    font-family: 'AliceWonderland';
     width: 80vw !important;
     max-width: 1000px;
     height: 80vh;
     font-size: 5rem ;
+    
+    word-break: keep-all;     /* don’t allow breaking inside words */
+    overflow-wrap: normal;    /* don’t allow emergency breaks */
+    white-space: normal;      /* still allow wrapping at spaces */
 }
 
 .swal2-html-container { padding: 40px;}
